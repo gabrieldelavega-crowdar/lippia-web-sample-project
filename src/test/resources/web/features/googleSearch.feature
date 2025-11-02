@@ -1,4 +1,5 @@
 Feature: As a potential client i need to search in google to find a web site
+  #Cambio realziado para el TP2 del Academy Advance
 
   @Smoke
   Scenario: The client search by "crowdar"
