@@ -10,14 +10,24 @@
       "--start-maximized",
       "--disable-blink-features=AutomationControlled",
       "--disable-save-password-bubble",
-      "--disable-password-manager-reauthentication"
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-features=PasswordManagerLeakDetection,Translate",
+
+      "--- ÚLTIMO INTENTO: DESHABILITAR EL SERVICIO DE SYNC ---",
+      "--disable-sync",
+      "--disable-account-consistency"
     ],
     "extensions": [],
     "prefs": {
       "printing.enabled": false,
       "credentials_enable_service": false,
       "profile.password_manager_enabled": false,
-      "profile.password_manager_leak_detection_enabled": false
+      "profile.password_manager_leak_detection_enabled": false,
+      "translate":{"enabled" : "false"},
+
+      "--- ÚLTIMO INTENTO: DESHABILITAR EL SIGN-IN ---",
+      "signin.allowed": false
     }
   },
   "platform": "ANY",
