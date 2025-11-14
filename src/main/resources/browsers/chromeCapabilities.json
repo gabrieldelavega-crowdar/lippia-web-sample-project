@@ -8,7 +8,9 @@
       "--test-type",
       "--ignore-certificate-errors",
       "--start-maximized",
-      "--disable-blink-features=AutomationControlled"
+      "--disable-blink-features=AutomationControlled",
+      "--disable-save-password-bubble",
+      "--disable-password-manager-reauthentication"
     ],
     "extensions": [],
     "prefs": {

@@ -10,7 +10,7 @@ Feature: Login
       And the user clicks the Login button
       Then the user is in Home Page
 
-@LoginFallido @Smoke @testGabo
+@LoginFallido @Smoke
   Scenario: Login fallado por credenciales invalidas
   When the user fills the email textbox with standard_user
   And the user fills the password textbox with secret_error
