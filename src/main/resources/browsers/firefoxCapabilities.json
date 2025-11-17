@@ -1,5 +1,15 @@
 {
-	"browserName": "firefox", 
+	"browserName": "firefox",
+	"moz:firefoxOptions": {
+		"args": [
+			"--width=1920",
+			"--height=1080"
+		],
+		"prefs": {
+			"geo.enabled": false,
+			"intl.accept_languages": "en-US"
+		}
+	},
 	"platform": "ANY",
-	"tz": "America/Argentina/Buenos_Aires"
-} 
+	"recordVideo": "false"
+}

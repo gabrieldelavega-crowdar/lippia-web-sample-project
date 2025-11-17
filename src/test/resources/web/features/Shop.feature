@@ -23,7 +23,7 @@ Feature: Shop
     And the user verify <product1> and <product2> names
     And the user verify products prices
     Then the user clicks the Finish button
-    And the user see the meesage "Thank you for your order!"
+    And the user see the meesage Thank you for your order!
 
 
     Examples:

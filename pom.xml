@@ -50,13 +50,13 @@
 
 		<profile>
 			<id>chrome</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
 			<properties>
 				<crowdar.projectType>WEB_CHROME</crowdar.projectType>
 				<crowdar.driver.capabilities.json_path>src/main/resources/browsers/chromeCapabilities.json</crowdar.driver.capabilities.json_path>
 			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 		</profile>
 
 		<profile>
@@ -64,6 +64,14 @@
 			<properties>
 				<crowdar.projectType>WEB_FIREFOX</crowdar.projectType>
 				<crowdar.driver.capabilities.json_path>src/main/resources/browsers/firefoxCapabilities.json</crowdar.driver.capabilities.json_path>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>firefoxHeadless</id>
+			<properties>
+				<crowdar.projectType>WEB_FIREFOX</crowdar.projectType>
+				<crowdar.driver.capabilities.json_path>src/main/resources/browsers/firefoxCapabilitiesGrid.json</crowdar.driver.capabilities.json_path>
 			</properties>
 		</profile>
 

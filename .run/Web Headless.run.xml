@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Web  Headed" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="Web Headless" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings" />
       <option name="myRunnerSettings" />
@@ -19,7 +19,11 @@
           <option name="multimoduleDir" />
           <option name="pomFileName" />
           <option name="profilesMap">
-            <map />
+            <map>
+              <entry key="Local" value="true" />
+              <entry key="chromeHeadlessl" value="true" />
+              <entry key="secuencial" value="true" />
+            </map>
           </option>
           <option name="projectsCmdOptionValues">
             <list />

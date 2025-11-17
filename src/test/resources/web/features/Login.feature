@@ -5,7 +5,7 @@ Feature: Login
     Given the user is in the login page
 
   @LoginOk @Smoke @Automated
-  Scenario: Login con credeciales Validas
+  Scenario: Login con credenciales Validas
     When the user fills the email textbox with standard_user
     And the user fills the password textbox with secret_sauce
     And the user clicks the Login button
