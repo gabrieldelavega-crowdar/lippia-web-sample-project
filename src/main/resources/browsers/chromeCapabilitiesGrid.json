@@ -1,9 +1,30 @@
 {
   "browserName": "chrome",
-  "goog:chromeOptions": {"args": ["disable-infobars","--headless","--window-size=1920x1080 ", "--no-sandbox", "--disable-dev-shm-usage" , "--ignore-certificate-errors", "--start-maximized"],
+  "goog:chromeOptions": {
+    "args": [
+      "disable-infobars",
+      "--headless",
+      "--window-size=1920x1080",
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--ignore-certificate-errors",
+      "--start-maximized",
+
+      "--- ARGUMENTOS EXTRA ANTIPOP-UPS ---",
+      "--disable-save-password-bubble",
+      "--no-first-run"
+    ],
     "extensions": [],
-    "prefs": {"printing.enabled": false}
+    "prefs": {
+      "printing.enabled": false,
+
+      "--- PREFS ANTIPOP-UPS ---",
+      "credentials_enable_service": false,
+      "profile.password_manager_enabled": false,
+      "profile.password_manager_leak_detection_enabled": false,
+      "translate":{"enabled" : "false"}
+    }
   },
   "platform": "ANY",
-  "recordVideo":"false"
+  "recordVideo": "false"
 }
