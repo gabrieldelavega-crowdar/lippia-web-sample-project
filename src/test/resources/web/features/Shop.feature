@@ -44,7 +44,7 @@ Feature: Shop
       | product             | name | lastname | zcode |
       | Sauce Labs Backpack |      | Perez    | 5500  |
 
-  @purchaseFailZipCode @Smoke @Automated @5 @testGabo
+  @purchaseFailZipCode @Smoke @Automated @5  @testGabo
   Scenario Outline: Fail Purchase Incomplete Zipcode
     When  the user clicks add <product> product button
     And the user clicks the Cart button

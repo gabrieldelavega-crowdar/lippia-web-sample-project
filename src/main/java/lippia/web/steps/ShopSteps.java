@@ -47,16 +47,6 @@ public class ShopSteps {
         ShopServices.clickContinue();
     }
 
-    @And("the user verify (.*) and (.*) names")
-    public void theUserVerifyAndNames(String prod1, String prod2) {
-        ShopServices.verifyProductsNames(prod1, prod2);
-    }
-
-    @And("the user verify products prices$")
-    public void theUserVerifyAndPrices() {
-        ShopServices.verifyProductsPrices();
-
-    }
 
     @Then("the user clicks the Finish button")
     public void theUserClicksTheFinishButton() {

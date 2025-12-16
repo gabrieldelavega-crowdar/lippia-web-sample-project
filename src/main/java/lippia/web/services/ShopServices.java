@@ -65,27 +65,6 @@ public class ShopServices {
 
     }
 
-    public static void verifyProductsNames(String prod1, String prod2) {
-
-        WebActionManager.waitVisibility(ShopConstants.OVERVIEW_PRODUCT_1);
-        String actualName1 = WebActionManager.getText(ShopConstants.OVERVIEW_PRODUCT_1);
-        Assert.assertEquals(actualName1, prod1);
-
-        WebActionManager.waitVisibility(ShopConstants.OVERVIEW_PRODUCT_2);
-        String actualName2 = WebActionManager.getText(ShopConstants.OVERVIEW_PRODUCT_2);
-        Assert.assertEquals(actualName2, prod2);
-
-    }
-
-    public static void verifyProductsPrices() {
-        WebActionManager.waitVisibility(ShopConstants.OVERVIEW_PRICE_1);
-        String actualPrice1 = WebActionManager.getText(ShopConstants.OVERVIEW_PRICE_1);
-        Assert.assertEquals(actualPrice1, PrevValue1);
-
-        WebActionManager.waitVisibility(ShopConstants.OVERVIEW_PRICE_2);
-        String actualPrice2 = WebActionManager.getText(ShopConstants.OVERVIEW_PRICE_2);
-        Assert.assertEquals(actualPrice2, PrevValue2);
-    }
 
     public static void clickFinish() {
         WebActionManager.waitVisibility(ShopConstants.BUTTON_FINISH_CHECKOUT).click();
