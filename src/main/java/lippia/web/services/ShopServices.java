@@ -53,10 +53,10 @@ public class ShopServices {
 
     }
 
-    public static void fillChecoutData() {
-        WebActionManager.setInput(ShopConstants.INPUT_FIRST_NAME_CHECKOUT, "Juan");
-        WebActionManager.setInput(ShopConstants.INPUT_LAST_NAME_CHECKOUT, "Perez");
-        WebActionManager.setInput(ShopConstants.INPUT_POSTAL_CODE_CHECKOUT, "5500");
+    public static void fillChecoutData(String name, String lastname, String zipcode) {
+        WebActionManager.setInput(ShopConstants.INPUT_FIRST_NAME_CHECKOUT, name);
+        WebActionManager.setInput(ShopConstants.INPUT_LAST_NAME_CHECKOUT, lastname);
+        WebActionManager.setInput(ShopConstants.INPUT_POSTAL_CODE_CHECKOUT, zipcode);
 
     }
 
