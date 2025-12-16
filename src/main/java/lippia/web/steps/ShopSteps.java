@@ -37,9 +37,9 @@ public class ShopSteps {
 
     }
 
-    @And("the user fill the Checkout data")
-    public void theUserFillTheCheckoutData() {
-        ShopServices.fillChecoutData();
+    @And("the user fill the Checkout data with Name (.*) Lastname (.*) and Zipcode (.*)$")
+    public void theUserFillTheCheckoutData(String name, String lastname, String zipcode) {
+        ShopServices.fillChecoutData(name, lastname, zipcode);
     }
 
     @And("the user clicks Continue button")
@@ -63,8 +63,8 @@ public class ShopSteps {
         ShopServices.clickFinish();
     }
 
-    @And("the user see the meesage (.*)$")
-    public void theUserSeeTheMeesage(String message) {
+    @And("the user see the message (.*)$")
+    public void theUserSeeTheMessage(String message) {
         ShopServices.verifyPurchaseMessage(message);
     }
 }
