@@ -5,18 +5,18 @@ Feature: Shop
     Given the user is logged in
     And the user is in Home Page
 
-  @addToCart @Automated @1
+  @addToCart @Automated @Punto1
   Scenario: Add from Cart
     When  the user clicks add Sauce Labs Backpack product button
     Then the user verify the cart has 1 products
 
-  @removeFromCart @Automated @2
+  @removeFromCart @Automated @Punto2
   Scenario: Remove from Cart
     When  the user clicks add Sauce Labs Backpack product button
     And  the user clicks remove Sauce Labs Backpack product button
     And the user verify the cart has 0 products
 
-  @completePurchase @Smoke @Automated @3
+  @completePurchase @Smoke @Automated @Punto3
   Scenario Outline: Complete Purchase
     When  the user clicks add <product> product button
     And the user clicks the Cart button
@@ -30,7 +30,7 @@ Feature: Shop
       | product             | Fname | Lname | Zcode |
       | Sauce Labs Backpack | Juan  | Perez | 5500  |
 
-  @purchaseFailByName @Smoke @Automated @4
+  @purchaseFailByName @Smoke @Automated @Punto4
   Scenario Outline: Fail Purchase Incomplete Name
     When  the user clicks add <product> product button
     And the user clicks the Cart button
@@ -44,7 +44,7 @@ Feature: Shop
       | product             | name | lastname | zcode |
       | Sauce Labs Backpack |      | Perez    | 5500  |
 
-  @purchaseFailZipCode @Smoke @Automated @5  @testGabo
+  @purchaseFailZipCode @Smoke @Automated @Punto5  @testGabo
   Scenario Outline: Fail Purchase Incomplete Zipcode
     When  the user clicks add <product> product button
     And the user clicks the Cart button
